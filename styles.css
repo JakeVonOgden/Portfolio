@@ -1,0 +1,529 @@
+/*=========MAIN HTML ELEMENTS======================*/
+
+* {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  
+  
+  
+}
+body {
+  background-color: black;
+  height: 400vh;
+ 
+
+}
+/*=========MAIN HTML ELEMENTS======================*/
+
+
+
+
+
+
+
+
+
+/*======================HOME PAGE===================== */
+
+.landing {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-image: url(https://images.unsplash.com/photo-1517284938313-7b578da60a59?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2139&q=80);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 70%;
+  
+}
+
+.title {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 16%;
+}
+
+#occupation {
+  padding-top: 5%;
+}
+
+.header {
+  position: relative;
+  color: seagreen;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  width: 100%;
+}
+
+#firstName {
+  width: 100%;
+  left: 5%;
+  text-align: left;
+  font-size: 8em;
+  text-shadow: 0 0 0.2em crimson;
+}
+
+#lastName {
+  text-align: center;
+  right: 30%;
+  font-size: 8em;
+  text-shadow: 0 0 0.2em crimson;
+}
+
+#lastName2 {
+  text-align: center;
+  right: 18%;
+  font-size: 8em;
+  text-shadow: 0 0 0.2em crimson;
+}
+
+#skill {
+  font-style: italic;
+
+  text-align: center;
+  right: 29%;
+  width: 100%;
+}
+
+#status {
+  font-style: italic;
+  position: relative;
+  right: 29%;
+
+  text-align: center;
+}
+
+.title > * {
+  flex-basis: 100%;
+}
+
+.flex-column {
+  position: fixed;
+  max-width: fit-content;
+  max-height: fit-content;
+  margin-top: 33vh;
+  right: 3%;
+  bottom: 0;
+  top: 0;
+  text-align: center;
+  z-index: 1;
+  font-family: "Courier New";
+}
+
+.nav-link {
+  color: seagreen;
+  font-weight: 900;
+  font-size: 1.4em;
+  text-shadow: 0 0 0.07em lawngreen;
+  padding: 1em;
+  white-space: nowrap;
+  filter: blur(0.02em);
+  letter-spacing: 0.02em;
+}
+
+.bi{
+  display: flex;
+  color: seagreen;
+  position: relative;
+  left: 23em;
+  top: 1em;
+}
+/*======================HOME PAGE END===================== */
+
+
+
+
+
+
+
+
+
+/*======================ABOUT ME===================== */
+
+.about {
+  display: grid;
+  grid-template-rows: 26% 47% 27%;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  background-color: rgb(26, 26, 26);
+  
+  
+}
+header{
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(10, 10, 10);
+    
+}
+main{
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  
+}
+footer{
+  grid-column: 1 / 3;
+  grid-row:  3 / 4;
+ 
+  z-index: 0;
+  background-color: rgb(10, 10, 10);
+}
+aside{
+grid-column: 1/2;
+grid-row: 2/3;
+background-color: rgb(15, 15, 15);
+display: flex;
+flex-direction: row;
+align-items: center;
+
+
+}
+
+#head{
+    width: 50%;
+    position: relative;
+    text-align: center;
+    left: 40%;
+    background-color: rgb(10, 10, 10);
+    font-size: 70px;
+    top: 15%;
+    color: seagreen;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+p{
+  position: relative;
+  font-size: 70px;
+  text-align: right;
+  max-width: fit-content;
+  height: min-content;
+  left: 15%;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 900;
+  color:rgb(15, 15, 15);
+  
+}
+#call::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 80%;
+  color: #0c63e4;
+  border-right: 0px solid #0c63e4;
+  overflow: hidden;
+  animation: animate 3s linear forwards;
+  
+ 
+  
+}
+#me{
+  left: 19%;
+}
+#me::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 80%;
+  color: #0c63e4;
+  border-right: 0px solid #0c63e4;
+  overflow: hidden;
+  animation: animate 3s linear forwards ;
+  
+}
+#jake::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 80%;
+  color: #0c63e4;
+  border-right: 0px solid #0c63e4;
+  overflow: hidden;
+  animation: animate 3s linear forwards;
+  
+}
+
+@keyframes animate{
+  0%, 10%, 100% {
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+/*-------------------ACCORDION STYLING---------------------*/
+.accordion{
+  max-width: 100%;
+  background-color: rgb(15, 15, 15);
+}
+.accordion-button{
+  background-color: rgb(15, 15, 15);
+  color: seagreen;
+  font-size: 40px;
+  box-shadow: none;
+  margin-right: 25px;
+}
+.accordion-button::after{
+  margin-right: 1em;
+}
+.accordion-button.collapsed::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232e8b57'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  margin-left: 25px;
+  box-shadow: none;
+}
+.accordion-button:is(.collapsed){
+  box-shadow: none;
+  text-shadow: 0 0 0.2em cornflowerblue;
+  font-size: 40px;
+}
+.accordion-button:not(.collapsed){
+  background-color: rgb(20, 20, 30);
+  border-color: rgb(15, 15, 15);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.accordion-header{
+max-width: 75%;
+padding: 10px;
+}
+  
+
+.accordion-body{
+  max-width: 75%;
+  height: auto;
+  padding: 10px;
+  z-index: 1;
+  font-size: 18px;
+}
+.accordion-body:not(.collapsed){
+  background-color: rgb(10, 10, 10);
+  box-shadow: rgba(2, 2, 117, 0.3) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  z-index: 1;
+  padding: 10px;
+  
+}
+.accordion-item:not(.collapsed){
+  color: seashell;
+  border-color:rgb(15, 15, 15);
+  background-color: rgb(15, 15, 15);
+  z-index: 1;
+  padding: 10px;
+  
+}
+
+/*-------------------ACCORDION STYLING END---------------------*/
+
+.skills{
+  color: seagreen;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 900;
+  
+  left: 15%;
+
+  
+  
+}
+#foot{
+    width: 50%;
+    position: relative;
+    text-align: center;
+    
+    background-color: rgb(10, 10, 10);
+    font-size: 70px;
+    top: 0%;
+    left: 40%;
+}
+.fab{
+  font-size: 50px;
+  background-color: rgb(10, 10, 10);
+  letter-spacing: 1em;
+  text-align: center;
+  position: relative;
+  top: 20%;
+  left: 56%;
+  
+}
+.fa-js-square{
+color: gold;
+}
+.fa-html5{
+color: coral;
+}
+.fa-css3-alt{
+color: cornflowerblue;
+}
+.fa-github{
+color: grey;
+}
+
+/*======================ABOUT ME END===================== */
+
+
+
+
+
+
+
+
+
+/*======================PORTFOLIO===================== */
+
+.portfolio {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: cornflowerblue;
+  padding: 0;
+  
+}
+
+/*======================PORTFOLIO END===================== */
+
+
+
+
+
+
+
+
+
+/*======================CONTACT===================== */
+.contact {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  background-color: darkslategray;
+  
+}
+/*======================CONTACT END===================== */
+
+
+
+
+
+
+
+
+
+/*======================MOBILE CONVERSION===================== */
+
+
+
+
+
+
+@media only screen and (max-width: 841px) {
+ body{
+   height: 400vh;
+   background-color: white;
+ }
+  /*=====HOME PAGE MOBILE========*/
+  #firstName {
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+  }
+  #lastName {
+    left: auto;
+    right: auto;
+    font-size: 60px;
+  }
+  #lastName2 {
+    left: auto;
+    right: auto;
+    font-size: 60px;
+  }
+  #occupation{
+    top: 40%;
+    text-align: center;
+    font-size: 10px;
+  }
+  .bi {
+    left: 15em;
+  }
+  #skill {
+    left: auto;
+    right: auto;
+  }
+  #status {
+    left: auto;
+    right: auto;
+  }
+  .flex-column{
+    display: none;
+  }
+ /*=====HOME PAGE MOBILE END========*/
+ /*=====ABOUT PAGE MOBILE========*/
+ .about{
+   height: 100vh;
+   grid-template-columns: 1fr;
+   grid-template-rows: 10% 70% 20%;
+ }
+
+#head{
+  left: auto;
+  right: auto;
+  width: 100%;
+  font-size: 40px;
+}
+#foot{
+  font-size: 40px;
+  top: auto;
+  left: auto;
+  width: 100%;
+}
+.fab{
+  font-size: 20px;
+  left: auto;
+  right: auto;
+}
+footer{
+  align-items: center;
+  text-align: center;
+}
+aside{
+flex-direction: column;
+}
+main{
+  display: none;
+}
+.accordion-body{
+  max-width: none;
+  font-size: 12px;
+}
+.accordion-button{
+font-size: 20px;
+}
+
+}
+/*======================MOBILE CONVERSION END===================== */
